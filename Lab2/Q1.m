@@ -1,0 +1,10 @@
+fs=100;
+f=0.25;
+x0 = 4.*ones(1,2*fs);
+t=linspace(0,1,fs);
+x1 = cos(2*pi*f*t)+3;
+x2 = 3.*ones(1,2*fs);
+x= [x0 x1 x2];
+t=linspace(-2,3,5*fs);
+plot(t,x);
+ylim([1,5]);
